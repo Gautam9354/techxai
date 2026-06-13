@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Monk Mod Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:#0f172a;
+}
+
+.falcon-banner{
+    width:100%;
+    height:100vh;
+    min-height:100dvh;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.falcon-banner::before{
+    content:"";
+    position:absolute;
+    width:60vw;
+    height:60vw;
+    background:#00d4ff;
+    filter:blur(120px);
+    left:-15%;
+    top:-10%;
+    opacity:.4;
+    animation:move1 8s infinite alternate;
+}
+
+.falcon-banner::after{
+    content:"";
+    position:absolute;
+    width:55vw;
+    height:55vw;
+    background:#7c3aed;
+    filter:blur(120px);
+    right:-15%;
+    bottom:-10%;
+    opacity:.4;
+    animation:move2 8s infinite alternate;
+}
+
+.overlay{
+    z-index:2;
+    text-align:center;
+    padding:25px;
+    width:100%;
+    max-width:550px;
+    color:white;
+}
+
+.overlay h1{
+    font-size:clamp(18px,4vw,28px);
+    letter-spacing:4px;
+}
+
+.overlay h2{
+    font-size:clamp(40px,10vw,75px);
+    margin:14px 0;
+    text-shadow:0 0 25px #00d4ff;
+}
+
+.overlay p{
+    font-size:clamp(14px,4vw,18px);
+    margin-bottom:25px;
+    color:#d1d5db;
+}
+
+/* Countdown Text */
+
+.redirect-text{
+    margin-bottom:30px;
+    color:#ffffff;
+    font-size:28px;
+    font-weight:700;
+    text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #00d4ff;
+    animation:glow 1.5s ease-in-out infinite alternate;
+}
+
+#countdown{
+    color:#00d4ff;
+    font-size:65px;
+    font-weight:900;
+    display:inline-block;
+    min-width:70px;
+    text-shadow:
+        0 0 10px #00d4ff,
+        0 0 20px #00d4ff,
+        0 0 40px #00d4ff,
+        0 0 80px #00d4ff;
+}
+
+/* Button */
+
+.start-btn{
+    width:min(90vw,300px);
+    height:70px;
+    border:none;
+    border-radius:22px;
+    background:linear-gradient(90deg,#00d4ff,#2563eb,#7c3aed);
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    animation:pulse 1.2s infinite;
+    box-shadow:0 0 35px rgba(0,212,255,.6);
+}
+
+.start-btn span{
+    display:block;
+    font-size:12px;
+    margin-top:4px;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.06);
+    }
+}
+
+@keyframes glow{
+    from{
+        opacity:.8;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes move1{
+    to{
+        transform:translate(80px,60px);
+    }
+}
+
+@keyframes move2{
+    to{
+        transform:translate(-80px,-60px);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="falcon-banner">
+    <div class="overlay">
+
+        <h1>WELCOME TO</h1>
+
+        <h2>Monk Mod STORE</h2>
+
+        <p>Premium Apps • Fast Download • Secure Store</p>
+
+        <a href="https://pro-olive-eight.vercel.app" target="_blank">
+            <button class="start-btn">
+                START NOW 🚀
+                <span>Tap Here</span>
+            </button>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
