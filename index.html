@@ -1,186 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Monk Mod Store</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    overflow:hidden;
-    background:#0f172a;
-}
-
-.falcon-banner{
-    width:100%;
-    height:100vh;
-    min-height:100dvh;
-    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-}
-
-.falcon-banner::before{
-    content:"";
-    position:absolute;
-    width:60vw;
-    height:60vw;
-    background:#00d4ff;
-    filter:blur(120px);
-    left:-15%;
-    top:-10%;
-    opacity:.4;
-    animation:move1 8s infinite alternate;
-}
-
-.falcon-banner::after{
-    content:"";
-    position:absolute;
-    width:55vw;
-    height:55vw;
-    background:#7c3aed;
-    filter:blur(120px);
-    right:-15%;
-    bottom:-10%;
-    opacity:.4;
-    animation:move2 8s infinite alternate;
-}
-
-.overlay{
-    z-index:2;
-    text-align:center;
-    padding:25px;
-    width:100%;
-    max-width:550px;
-    color:white;
-}
-
-.overlay h1{
-    font-size:clamp(18px,4vw,28px);
-    letter-spacing:4px;
-}
-
-.overlay h2{
-    font-size:clamp(40px,10vw,75px);
-    margin:14px 0;
-    text-shadow:0 0 25px #00d4ff;
-}
-
-.overlay p{
-    font-size:clamp(14px,4vw,18px);
-    margin-bottom:25px;
-    color:#d1d5db;
-}
-
-/* Countdown Text */
-
-.redirect-text{
-    margin-bottom:30px;
-    color:#ffffff;
-    font-size:28px;
-    font-weight:700;
-    text-shadow:
-        0 0 10px #00d4ff,
-        0 0 20px #00d4ff,
-        0 0 40px #00d4ff;
-    animation:glow 1.5s ease-in-out infinite alternate;
-}
-
-#countdown{
-    color:#00d4ff;
-    font-size:65px;
-    font-weight:900;
-    display:inline-block;
-    min-width:70px;
-    text-shadow:
-        0 0 10px #00d4ff,
-        0 0 20px #00d4ff,
-        0 0 40px #00d4ff,
-        0 0 80px #00d4ff;
-}
-
-/* Button */
-
-.start-btn{
-    width:min(90vw,300px);
-    height:70px;
-    border:none;
-    border-radius:22px;
-    background:linear-gradient(90deg,#00d4ff,#2563eb,#7c3aed);
-    color:#fff;
-    font-size:20px;
-    font-weight:bold;
-    cursor:pointer;
-    animation:pulse 1.2s infinite;
-    box-shadow:0 0 35px rgba(0,212,255,.6);
-}
-
-.start-btn span{
-    display:block;
-    font-size:12px;
-    margin-top:4px;
-}
-
-@keyframes pulse{
-    50%{
-        transform:scale(1.06);
-    }
-}
-
-@keyframes glow{
-    from{
-        opacity:.8;
-    }
-    to{
-        opacity:1;
-    }
-}
-
-@keyframes move1{
-    to{
-        transform:translate(80px,60px);
-    }
-}
-
-@keyframes move2{
-    to{
-        transform:translate(-80px,-60px);
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Telegram Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Smooth gradient background like the image */
+        body {
+            background: radial-gradient(circle at top left, #0b2c24, #0d1520 60%);
+        }
+    </style>
 </head>
+<body class="flex items-center justify-center min-h-screen text-white font-sans p-4">
 
-<body>
+    <div class="bg-[#16222f]/60 backdrop-blur-md border border-gray-700/30 rounded-3xl p-8 max-w-sm w-full text-center shadow-2xl tracking-wide">
+        
+        <div class="relative w-32 h-32 mx-auto mb-6 rounded-full p-1 bg-gradient-to-tr from-green-400 to-emerald-600 shadow-[0_0_20px_rgba(52,211,153,0.4)]">
+            <img src="profile.png" alt="Profile" class="w-full h-full object-cover rounded-full border-2 border-[#16222f]">
+        </div>
 
-<div class="falcon-banner">
-    <div class="overlay">
+        <h1 class="text-2xl font-bold uppercase tracking-wider mb-4 flex justify-center items-center gap-2">
+            TECH BHAI OK <span class="text-xl">🥷</span>
+        </h1>
 
-        <h1>WELCOME TO</h1>
+        <div class="inline-block border border-green-500/50 bg-green-950/30 text-green-400 font-semibold text-xs px-4 py-2 rounded-full uppercase tracking-widest mb-6">
+            🔥 Premium Telegram Club 🔥
+        </div>
 
-        <h2>Monk Mod STORE</h2>
+        <div class="space-y-3 text-gray-300 text-sm mb-8 text-left max-w-[240px] mx-auto">
+            <div class="flex items-center gap-3">
+                <span>💸</span> <span>Daily Winning Updates</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span>🚀</span> <span>Instant Telegram Access</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span>🏆</span> <span>Trusted Premium Community</span>
+            </div>
+        </div>
 
-        <p>Premium Apps • Fast Download • Secure Store</p>
+        <p class="text-gray-400 text-base mb-6">
+    Redirecting in <span id="countdown" class="text-green-400 font-bold text-2xl mx-1">4</span> sec...
+</p>
 
-        <a href="https://pro-olive-eight.vercel.app" target="_blank">
-            <button class="start-btn">
-                START NOW 🚀
-                <span>Tap Here</span>
-            </button>
+        <a id="tg-link" href="https://t.me/arora06" class="block w-full bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-900 font-bold text-lg py-4 rounded-2xl shadow-[0_4px_20px_rgba(6,182,212,0.4)] transition-all duration-300 transform hover:scale-[1.02] uppercase tracking-wider">
+            👁️ Join Whatshapp Now
         </a>
 
+        <p class="text-xs text-gray-500 mt-4">
+            If redirect doesn't work, click the button above.
+        </p>
     </div>
-</div>
+
+    <script>
+        // Apne Telegram Channel ka URL yahan set karein
+        const telegramURL = "https://t.me/arora06"; 
+        
+        let timeLeft = 4; // 2 seconds ka timer
+        const countdownElement = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = telegramURL; // Automatic redirect
+            }
+        }, 1000);
+    </script>
 
 </body>
 </html>
